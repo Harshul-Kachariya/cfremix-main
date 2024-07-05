@@ -1,7 +1,8 @@
 import React, { useState, Suspense } from "react";
 
 const Customcomponents = () => {
-  const [CurrentComponent, setCurrentComponent] = useState(null);
+  const [CurrentComponent, setCurrentComponent] =
+    useState<React.Component<any, any, any>>(null);
 
   const loadComponent = (component: any) => {
     setCurrentComponent(() => component);
