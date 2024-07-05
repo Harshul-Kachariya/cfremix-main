@@ -6,7 +6,9 @@ export default function HelloWorld2() {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts/2")
       .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((data) => {
+        setData(data);
+      });
   }, []);
 
   return (

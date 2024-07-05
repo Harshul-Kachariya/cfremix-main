@@ -64216,7 +64216,9 @@ __export(hello1_exports, {
 function HelloWorld1() {
   const [data, setData] = (0, import_react2.useState)(null);
   (0, import_react2.useEffect)(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/1").then((response) => response.json()).then((data2) => setData(data2));
+    fetch("https://jsonplaceholder.typicode.com/posts/1").then((response) => response.json()).then((data2) => {
+      setData(data2);
+    });
   }, []);
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_jsx_runtime2.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "p-5", children: [
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h1", { className: "text-xl font-bold ", children: "Hello World 1 Component" }),
@@ -64243,7 +64245,9 @@ __export(hello2_exports, {
 function HelloWorld2() {
   const [data, setData] = (0, import_react3.useState)(null);
   (0, import_react3.useEffect)(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/2").then((response) => response.json()).then((data2) => setData(data2));
+    fetch("https://jsonplaceholder.typicode.com/posts/2").then((response) => response.json()).then((data2) => {
+      setData(data2);
+    });
   }, []);
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "p-5", children: [
     /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h2", { className: "text-xl font-bold ", children: "Hello World 2 Component" }),
